@@ -1,4 +1,4 @@
-package com.fabriciosaand.testeauth.security;
+package com.fabriciosaand.testeauth.util;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
