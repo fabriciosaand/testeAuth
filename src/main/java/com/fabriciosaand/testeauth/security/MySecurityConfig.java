@@ -17,6 +17,7 @@ public class MySecurityConfig {
         http.csrf().disable()
             .authorizeHttpRequests()
             .requestMatchers(HttpMethod.GET, "/free").permitAll()
+            .requestMatchers(HttpMethod.POST, "/login").permitAll()
             .anyRequest().authenticated().and().cors();
 
         http.addFilterBefore(new MyFilter(), UsernamePasswordAuthenticationFilter.class);
